@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tiffl.github.io/NYCFoodFinder",
   "dependencies": {
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
@@ -9,6 +10,8 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
